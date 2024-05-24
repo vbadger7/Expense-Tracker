@@ -6,7 +6,7 @@ exports.showExpenses = async (req, res) => {
     }
 
     const expenses = await Expense.findAll({ where: { userId: req.session.user.id } });
-    res.render('dashboard', { expenses });
+    res.render('dashboard', { expenses: JSON.stringify(expenses) });
 };
 
 exports.addExpense = async (req, res) => {
