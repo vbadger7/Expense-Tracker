@@ -1,0 +1,25 @@
+<div class="total">
+    <h2>Total Expenses:</h2>
+  </div>
+  <div class="add">
+    <form action="/path-to-your-server-endpoint" method="post">
+      <label for="category">Choose a category:</label>
+      <select name="category" id="category">
+        <option value="utilities">Utilities</option>
+        <option value="insurance">Insurance</option>
+        <option value="housing">Housing</option>
+        <option value="groceries">Groceries</option>
+        <option value="transportation">Transportation</option>
+        <option value="Entertainment">Entertainment</option>
+        <option value="other">Other</option>
+      </select>
+      <input type="number" name="amount" placeholder="Expense amount" required>
+      <input type="text" name="description" placeholder="Expense description">
+      <div class="button-container">
+      <button type="submit">Add Expense</button>
+    </div>
+    </form>
+  </div>
+  <div class="expenses-list">
+    <!-- Expenses will be listed here -->
+  </div>
