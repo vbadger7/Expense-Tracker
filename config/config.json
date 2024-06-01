@@ -1,10 +1,9 @@
 {
     "development": {
-        "username": "your_db_username",
-        "password": "your_db_password",
+        "username": "postgres",
+        "password": "Nra2005!",
         "database": "expense_tracker_db",
         "host": "127.0.0.1",
-        "use_env_variable": "DATABASE_URL",
         "dialect": "postgres"
     }
 }
