@@ -1,10 +1,11 @@
-<div class="total">
+<main>
+    <link rel="stylesheet" type="text/css" href="/css/expense.css">
     <h2>Total Expenses:</h2>
-  </div>
-  <div class="add">
-    <form action="/path-to-your-server-endpoint" method="post">
-      <label for="category">Choose a category:</label>
-      <select name="category" id="category">
+     <div class="total-expenses">
+      </div>
+    <form action="\expense" method="POST">
+        <label for="category">Choose a category:</label>
+        <select name="category" id="category">
         <option value="utilities">Utilities</option>
         <option value="insurance">Insurance</option>
         <option value="housing">Housing</option>
@@ -13,13 +14,21 @@
         <option value="Entertainment">Entertainment</option>
         <option value="other">Other</option>
       </select>
-      <input type="number" name="amount" placeholder="Expense amount" required>
-      <input type="text" name="description" placeholder="Expense description">
-      <div class="button-container">
-      <button type="submit">Add Expense</button>
-    </div>
+       <label for="amount">Amount:</label>
+        <input type="number" id="amount" name="amount" placeholder="Expense amount"required>
+
+        <label for="description">Description:</label>
+        <input type="text" id="description" name="description" placeholder="Expense description">
     </form>
+ <div class="button-container">
+        <button type="submit" class="add">Add Expense</button>
+    </div>    <div class="expenses-list">
+    {{#each expenses}}
+      <div class="expense-item">
+        <p>Category: {{this.category}}</p>
+        <p>Amount: ${{this.amount}}</p>
+        <p>Description: {{this.description}}</p>
+      </div>
+    {{/each}}
   </div>
-  <div class="expenses-list">
-    <!-- Expenses will be listed here -->
-  </div>
+</main>

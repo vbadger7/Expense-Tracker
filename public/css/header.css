@@ -1,0 +1,27 @@
+header {
+    color: white;
+    background-color: darkblue;
+    height: 8vh;
+    display: flex;
+    align-items: center; 
+    justify-content: space-between;
+    padding: 0 20px; 
+  }
+  
+  h2 {
+    font-size: 35px;
+  }
+  
+  li {
+    font-size: large;    
+    display: inline;
+    margin-inline: 2px;
+  }
+  
+  a{
+    color: white;
+    text-decoration: underline;
+  }
+
+
+

@@ -1,8 +1,16 @@
-<form action="/auth/login" method="POST">
-    <label for="username">Username:</label>
-    <input type="text" id="username" name="username" required>
-    <label for="password">Password:</label>
-    <input type="password" id="password" name="password" required>
-    <button type="submit">Login</button>
-</form>
-<a href="/signup">Sign Up</a>
+<main>
+    <link rel="stylesheet" type="text/css" href="/css/form.css">
+    <h2>Login</h2>
+    <form action="/login" method="POST">
+        <label for="username">Username:</label>
+        <input type="text" id="username" name="username" required>
+
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+
+        <button type="submit">Login</button>
+        <p class="-no">
+            No account?<a href="/signup" class="no-button">Sign up</a>
+        </p>
+    </form>
+</main>

@@ -1,0 +1,66 @@
+body {
+    height: 100vh;
+    margin: 0;
+    padding: 0;
+    background-color: rgb(231, 234, 236);
+}
+
+
+main {
+    height: 80vh;
+    width: 60%;
+    background-color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 6vh auto; 
+}
+
+button {
+    color: white;
+    background-color: lightsteelblue;
+    width: 100%;
+    height: 30px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+form {
+    display: grid;
+    height: 100vh;
+    width: 100%;
+    margin-top: 50px;
+}
+
+
+label {
+    line-height: normal;
+    display: block;
+    text-align: left;
+    padding: 0; 
+  }
+  
+  input {
+    display: block;
+    height: 25px;
+    width: 100%;
+    margin-top: -65px;
+    padding: 0;
+  }
+
+  .no {
+    text-align: center;
+    margin-top: 20px; 
+  }
+  
+  .no-button {
+    color: #0056b3;
+    padding: 0px 8px;
+    text-decoration: underline; 
+    display: inline-block; 
+  }
+  
+  .no-button:hover {
+    color: purple;
+  }
