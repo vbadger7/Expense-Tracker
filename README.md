@@ -1,10 +1,10 @@
-# Expense tracker
+# Welfy
 
 ## Description 
-This expense tracker website is designed to help you manage your finances effectively. With the new chart feature, you can now visualize your expenses in a clear and informative way. Keep track of your spending habits and make informed financial decisions with ease. The website offers a user-friendly interface, secure data handling, and seamless integration of the chart feature for a comprehensive expense tracking experience.
+Welfy is a expense tracker website that is designed to help you manage your finances effectively. With the new chart feature, you can now visualize your expenses in a clear and informative way. Keep track of your spending habits and make informed financial decisions with ease. The website offers a user-friendly interface, secure data handling, and seamless integration of the chart feature for a comprehensive expense tracking experience.
 
 ## Installation 
-To run this expense tracker website locally using Node.js, follow these steps:
+To run this Welfy locally using Node.js, follow these steps:
 
 Clone the repository from GitHub to your local machine using the command:
 git clone <https://github.com/vbadger7/Expense-Tracker.git>
