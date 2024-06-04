@@ -36,3 +36,8 @@ body {
     justify-content: center;
     margin-top: 1rem;
   }
+
+#expensesChart{
+  height:50%;
+  width:50%;
+}
