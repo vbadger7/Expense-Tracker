@@ -7,7 +7,6 @@ const db = require('./models');
 const authRoutes = require('./routes/authRoutes');
 const expenseRoutes = require('./routes/expenxeRoutes');
 const path = require('path');
-const Expense = require('./views/partials/expense.handlebars');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
@@ -22,7 +21,7 @@ app.use(session({
 }));
 
 app.engine('handlebars', exphbs.engine({ extname: '.handlebars', defaultLayout: 'main', layoutsDir: path.join(__dirname, 'views/layouts'),
-partialsDir: path.join(__dirname, 'views/partials') }));
+partialsDir: path.join(__dirname, 'views') }));
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'views'));
 
@@ -32,19 +31,20 @@ app.use(express.urlencoded({ extended: true }));
 
 // Define a route
 app.get('/', (req, res) => {
-    res.render('partials/login');
+    res.render('login');
 });
 
+
 app.get('/signup', (req, res) => {
-    res.render('partials/signup'); 
+    res.render('signup'); 
 });
 
 app.get('/expense', (req, res) => {
-    res.render('partials/expense'); 
+    res.render('expense'); 
 });
 
 app.get('/dashboard', (req, res) => {
-    res.render('partials/dashboard'); 
+    res.render('dashboard'); 
 });
 
 app.post('/login', (req, res) => {

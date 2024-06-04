@@ -22,6 +22,11 @@ header {
     color: white;
     text-decoration: underline;
   }
+  
+  a:hover {
+        color: purple;
+  }
+
 
 
 
