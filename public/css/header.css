@@ -27,6 +27,17 @@ header {
         color: purple;
   }
 
+#logo{
+  height: auto;
+  width: 100px;
+  padding: 0px 0px;
+}
+
+#logo2{
+  vertical-align:middle;
+  height: auto;
+  width: 300px;
+}
 
 
 

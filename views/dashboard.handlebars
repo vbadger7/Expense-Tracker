@@ -1,6 +1,6 @@
 <link rel="stylesheet" type="text/css" href="/css/dashboard.css">
 <h1>Dashboard</h1>
-<form action="/expenses" method="POST">
+<form action="/expenseRoutes" method="POST">
     <label for="description">Description:</label>
     <input type="text" id="description" name="description" required>
     <label for="amount">Amount:</label>
@@ -17,10 +17,10 @@
     {{/each}}
 </ul>
 
-<h2>Expenses Chart</h2>
-<canvas id="expensesChart" data-expenses="{{expenses}}"></canvas>
+<h2 justify-content="center">Expenses Chart</h2>
+<div class="chart-container" style="position: relative; height:40vh; width:80vw">
+    <canvas id="expensesChart" data-expenses="{{expenses}}"></canvas>
+</div>
 <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
 <script src="/js/chart.js"></script>
-<a href="/controllers/authController.js">Logout</a>
 
-<a href="/auth/logout">Logout</a>
