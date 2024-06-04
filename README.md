@@ -6,21 +6,13 @@ This expense tracker website is designed to help you manage your finances effect
 ##Installation 
 
 
-
 ##Features
-
 Sign up for an account by providing a username and password
-
 Log in with your username and password
-
 Log out of an account
 
 After login, users can:
-
 View all expenses
-
 View total amount of expenses
-
 View expenses break down in chart visualizations 
-
 Add an expense by category, amount, and a description
