@@ -1,6 +1,6 @@
+
 document.addEventListener('DOMContentLoaded', () => {
     const expensesChart = document.getElementById('expensesChart');
-    console.log('Expenses data:', expensesChart.dataset.expenses); // Debugging line
     const expenses = JSON.parse(expensesChart.dataset.expenses);
 
     const labels = expenses.map(expense => expense.description);
