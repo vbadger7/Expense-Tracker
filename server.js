@@ -5,7 +5,7 @@ const cookieParser = require('cookie-parser');
 const exphbs = require('express-handlebars');
 const db = require('./models');
 const authRoutes = require('./routes/authRoutes');
-const expenseRoutes = require('./routes/expenxeRoutes');
+const expenseRoutes = require('./routes/expenseRoutes');
 const path = require('path');
 
 const app = express();
@@ -21,7 +21,7 @@ app.use(session({
 }));
 
 app.engine('handlebars', exphbs.engine({ extname: '.handlebars', defaultLayout: 'main', layoutsDir: path.join(__dirname, 'views/layouts'),
-partialsDir: path.join(__dirname, 'views') }));
+viewsDir: path.join(__dirname, 'views') }));
 app.set('view engine', 'handlebars');
 app.set('views', path.join(__dirname, 'views'));
 
