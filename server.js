@@ -51,6 +51,8 @@ app.post('/login', (req, res) => {
     res.render('login');
 });
 
+app.get('/favicon.ico', (req, res) => res.status(204));
+
 console.log('__dirname resolves to:', __dirname);
 
 app.use('/auth', authRoutes);
@@ -61,4 +63,3 @@ db.sequelize.sync().then(() => {
         console.log(`Server is running on http://localhost:${PORT}`);
     });
 });
-

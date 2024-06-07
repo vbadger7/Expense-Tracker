@@ -4,12 +4,13 @@
     box-sizing: border-box;
 }
 
-/* body {
+body {
+    display:inline;
     height: 100vh;
-    display: flex;
     align-items: center;
     justify-content: center;
-} */
+    background-color: rgb(231, 234, 236);
+}
 
 
 h2 {
@@ -24,6 +25,7 @@ h2 {
     padding: 30px;
     border: 1px solid #ccc;
     border-radius: 5px;
+    background-color:white;
   }
 
   .form-group {
