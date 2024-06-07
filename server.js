@@ -51,6 +51,8 @@ app.post('/login', (req, res) => {
     res.render('login');
 });
 
+app.get('/favicon.ico', (req, res) => res.status(204));
+
 console.log('__dirname resolves to:', __dirname);
 
 app.use('/auth', authRoutes);
