@@ -4,17 +4,20 @@
             "password": "Nra2005!",
             "database": "expense_tracker_db",
             "host": "127.0.0.1",
-            "dialect": "postgres"
+            "dialect": "postgres",
+            "port": 3001
         },
         "test": {
             "username": "postgres",
             "password": "Nra2005!",
             "database": "database_test",
             "host": "127.0.0.1",
-            "dialect": "postgres"
+            "dialect": "postgres",
+            "port": 3001
         },
         "production": {
             "use_env_variable": "DATABASE_URL",
-            "dialect": "postgres"
+            "dialect": "postgres",
+            "port": 3001
         }
     }
